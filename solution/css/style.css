@@ -1,0 +1,214 @@
+* {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #5C5C5C;
+  padding: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.todo {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  padding: 0 0 12px;
+  background: #fff;
+  border: 1px solid;
+  border-color: #dfdcdc #d9d6d6 #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.todo:before, .todo:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 4px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.todo:after {
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.todo:before {
+  left: 2px;
+  right: 2px;
+  bottom: -5px;
+  border-color: #c4c4c4;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.todo__form {
+  padding: 0 0 0 40px;
+}
+.todo__form input {
+  border: 0;
+  padding: 15px 10px;
+  width: 100%;
+  outline: 0;
+  font-size: 16px;
+}
+.todo__remaining {
+  padding: 10px 15px 0px 50px;
+  font-style: italic;
+  font-size: 12px;
+}
+.todo__list {
+border-top: 1px solid #e6ebed;
+}
+.todo__list:before {
+  content: '';
+  width: 3px;
+  z-index: 2;
+  border: 1px solid #f2e3df;
+  border-width: 0 1px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 35px;
+}
+
+.todo__list li {
+  position: relative;
+  padding: 0 15px 0 50px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #8b8f97;
+  border-bottom: 1px solid #e6ebed;
+}
+.todo__list li:hover a {
+  opacity: 1;
+}
+.todo__list li a {
+  text-decoration: none;
+  color: #6bb3ca;
+  font-size: 22px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.todo__list li p,
+.todo__list li input {
+  line-height: 40px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+input[type=checkbox] {
+ display: none;
+}
+
+input[type=checkbox]:checked + .toggle:after {
+ opacity: 1;
+}
+
+.todo__list .toggle {
+  display: block;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  text-indent: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.toggle:after {
+  content: '';
+  position: absolute;
+  position: absolute;
+  width: 7px;
+  height: 3px;
+  background: transparent;
+  top: 14px;
+  left: 13px;
+  border: 2px solid #aaa;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.todo__list .toggle:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #faf9f9;
+  border: 1px solid #6bb3ca;
+  border-radius: 2px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  -webkit-box-shadow: 0 1px 1px #dfecf4;
+  -moz-box-shadow: 0 1px 1px #dfecf4;
+  box-shadow: 0 1px 1px #dfecf4;
+}
+
+.todo__list .toggle:hover:before {
+  -webkit-box-shadow: 0 0 3px #6bb3ca;
+  -moz-box-shadow: 0 0 3px #6bb3ca;
+  box-shadow: 0 0 3px #6bb3ca;
+}
+
+.todo__list .done .toggle:before, .todo__list .toggle:active:before {
+  border-color: #c0c0c0 #ccc #d8d8d8;
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 5px 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 5px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.todo-controls {
+  margin: 0 15px 12px 50px;
+  height: 12px;
+}
+
+.todo-controls li {
+  float: left;
+}
+
+.todo-controls li + li { margin-left: 10px }
+
+.todo-controls .right { float: right }
+
+.todo-controls a {
+  display: block;
+  margin: 0;
+  opacity: .6;
+}
+
+.todo-controls a:hover { opacity: 1 }
+
+.todo-pagination {
+  margin: 12px 12px 0 50px;
+  height: 22px;
+}
