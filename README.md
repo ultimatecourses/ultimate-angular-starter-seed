@@ -1,6 +1,12 @@
+<a href="https://ultimateangular.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
+
+# Ultimate Angular: Fundamental Starter App Seed
+
+> This repo serves as the seed project for the Ultimate Angular 1.x Fundamentals course as well as the final solution in `solution` directory. Come and [learn Angular 1.x](https://ultimateangular.com), latest features, architecture and components!
+
 # Starter Seed
 
-A starter project for the Ultimate AngularJS [Starter course](https://courses.toddmotto.com).
+A starter project for the Ultimate Angular 1.x [Fundamentals course](https://ultimateangular.com).
 
 ### Running this app
 
@@ -15,7 +21,7 @@ If you're on Windows, you can also download and run python, or if it's easier yo
 
 ### Course members
 
-I'd love to see what you've built after mastering the core of AngularJS, consider submitting a PR to this repo to a new branch name (under your chosing). That way, solutions or things you've built after this course would be amazing to see! I wish you luck in your endeavours.
+I'd love to see what you've built after mastering the core of Angular, consider submitting a PR to this repo to a new branch name (under your chosing). That way, solutions or things you've built after this course would be amazing to see! I wish you luck in your endeavours.
 
 > Non-course members (this project is open source on GitHub)
 
