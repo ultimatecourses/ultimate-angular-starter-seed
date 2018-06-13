@@ -143,7 +143,6 @@ input[type=checkbox]:checked + .toggle:after {
 .toggle:after {
   content: '';
   position: absolute;
-  position: absolute;
   width: 7px;
   height: 3px;
   background: transparent;
