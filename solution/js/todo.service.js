@@ -13,7 +13,7 @@ function TodoService($http) {
     });
   }
   function update(todo) {
-    return $http.put(API + todo.id).then(function (response) {
+    return $http.put(API + todo.id, todo).then(function (response) {
       return response.data;
     });
   }
