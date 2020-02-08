@@ -1,12 +1,12 @@
-<a href="https://ultimateangular.com" target="_blank"><img src="https://ultimateangular.com/assets/img/banners/ua-github.svg"></a>
+<a href="https://ultimatecourses.com" target="_blank"><img src="https://ultimatecourses.com/static/banners/ultimate-angular-leader-old.svg"></a>
 
 # Ultimate Angular: Fundamental Starter App Seed
 
-> This repo serves as the seed project for the Ultimate Angular 1.x Fundamentals course as well as the final solution in `solution` directory. Come and [learn Angular 1.x](https://ultimateangular.com), latest features, architecture and components!
+> This repo serves as the seed project for the Ultimate Angular 1.x Fundamentals course as well as the final solution in `solution` directory. Come and [learn Angular 1.x](https://ultimatecourses.com/courses/angularjs), latest features, architecture and components!
 
 # Starter Seed
 
-A starter project for the Ultimate Angular 1.x [Fundamentals course](https://ultimateangular.com).
+A starter project for the Ultimate Angular 1.x [Fundamentals course](https://ultimatecourses.com/learn/angularjs-fundamentals).
 
 ### Running this app
 
@@ -25,4 +25,4 @@ I'd love to see what you've built after mastering the core of Angular, consider 
 
 > Non-course members (this project is open source on GitHub)
 
-Checkout the `solution` directory for an awesome Todo App. If you want to build exactly that and learn the mechanics behind it (and much more) then dive into [Ultimate AngularJS: Starter Course](https://courses.toddmotto.com/products/ultimate-angularjs-starter).
+Checkout the `solution` directory for an awesome Todo App. If you want to build exactly that and learn the mechanics behind it (and much more) then dive into [Ultimate AngularJS: Starter Course](https://app.ultimatecourses.com/course/angularjs-fundamentals).
